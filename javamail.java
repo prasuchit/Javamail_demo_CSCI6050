@@ -7,8 +7,8 @@ public class javamail {
 
     public static void main(String[] args) {
 
-        final String username = "prasuchit@gmail.com";  //Change Accordingly
-        final String password = "PASSWORD"; //Edit this
+        final String username = "prasuchit@gmail.com";  //Edit accordingly.
+        final String password = "PASSWORD"; //Edit accordingly.
 
         Properties prop = new Properties();
         prop.put("mail.smtp.host", "smtp.gmail.com");
@@ -26,10 +26,10 @@ public class javamail {
         try {
 
             Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress("prasuchit@gmail.com"));
+            message.setFrom(new InternetAddress("prasuchit@gmail.com"));    //Edit accordingly.
             message.setRecipients(
                     Message.RecipientType.TO,
-                    InternetAddress.parse("prasuchit@gmail.com")
+                    InternetAddress.parse("prasuchit@gmail.com")    //Edit accordingly.
             );
             message.setSubject("Testing Javamail via Gmail TLS");
             message.setText("Dear Registered User,"
